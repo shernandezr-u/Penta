@@ -1,0 +1,78 @@
+.navbar-brand img{
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu{
+    background-color: #7f7a7a;
+    font: #000;
+}
+.dropdown-item:hover{
+    background-color: #313030;
+}
+
+.btn-success {
+    background-color: #1dc71f;
+    border-color: #1d641e;
+    color: #ffffff;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #21aa23;
+    border-color: #1dc71f;
+}
+
+.form-control{
+    background-color: #fff;
+}
+
+.form-control:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+.search-input::placeholder{
+    color: #9a9898;
+}
+
+#miCarusel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #76787a;
+}
+
+.carousel-indicators .active {
+  background-color: #0e0e0e;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #7f7a7a;
+}
+
