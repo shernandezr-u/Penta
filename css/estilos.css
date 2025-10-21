@@ -1,7 +1,7 @@
 .navbar-brand img{
-    height: 60px;
+    display:block;
+    height: 50px;
     width: auto;
-    border-radius: 8px;
     margin-left: 15px;
 }
 
@@ -25,7 +25,7 @@
 .btn-success {
     background-color: #1dc71f;
     border-color: #1d641e;
-    color: #ffffff;
+    color: #1D591B;
 }
 
 .btn-success:hover,

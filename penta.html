@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Link de iconos bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!--Link para uso de CSS-->
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
+
 <body class="container-fluid">
+    <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
+            <!--Logotipo-->
             <a class="navbar-brand" href="#">
-                <img src="img/penta.png" alt="Penta Logo" alt = "Logo Penta">
+                <img src="img/penta.png" alt = "Logo Penta">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        <!--Opciones en el menú de navegación-->
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
@@ -25,6 +30,7 @@
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
+                <!--Opción con dropdown-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
                     <div class="dropdown-menu">
@@ -37,6 +43,7 @@
                     <a class="nav-link" href="#">Contáctenos</a>
                 </li>
             </ul>
+            <!--Espacio para Buscar-->
             <form class="d-flex">
                 <input class="form-control me-sm-2 search-input" type="search" placeholder="Buscar">
                 <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
@@ -45,18 +52,20 @@
         </div>
     </nav>
 
+    <!-- Contenedor del carrusel -->
     <div class="container mt-5 pt-4">  
         <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
-  
+            <!-- Indicadores del carrusel -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#ejemplo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#ejemplo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#ejemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2"></button>
             </div>
 
+            <!-- Contenido (imágenes) del carrusel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="img/rubraphos.png" alt="rubraphos" class="d-block w-100">
+                <img src="img/rubraphos.png" alt="Rubraphos" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
                 <img src="img/supertrueno.png" alt="SuperTrueno" class="d-block w-100">
@@ -66,6 +75,7 @@
                 </div>
             </div>
 
+            <!-- Controladores del carrusel (derecha y izquierda) -->
             <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -75,27 +85,33 @@
         </div>
     </div>
 
+    <!-- Contenedor main -->
     <main class="container mt-4">
+        <!-- Espacio de texto para información de la empresa - margen derecho solo aplica para las pantallas lg-->
         <div class="row align-items-center">
-            <div class="col-12 col-md-7 col-lg-1"></div>
-            <div class="col-12 col-md-7 col-lg-5 me-5 texto-penta">
+            <div class="col-12 col-md-1 col-lg-1"></div>
+            <div class="col-12 col-md-7 col-lg-5 me-lg-5 texto-penta">
                 <h2 class="text-primary mb-3">Bienvenidos a Penta</h2>
                 <p>En Penta, nos dedicamos a ofrecer productos veterinarios de alta calidad para el bienestar animal. Nuestra misión es proporcionar soluciones efectivas y seguras para mantener a tus animales saludables.</p>
                 <p>Explora nuestra amplia gama de productos, desde antibióticos hasta vitaminas y minerales, diseñados para satisfacer las necesidades específicas de cada especie. Nuestro equipo de expertos está comprometido en brindarte el mejor servicio y asesoramiento para que puedas tomar decisiones informadas sobre la salud de tus animales.</p>
                 <button class="btn btn-primary mt-2">Conoce más</button>
             </div>
-            <div class="col-12 col-md-7 col-lg-5 ms-3 mt-4 mb-4">
+        <!-- Columna de foto - margen izquierdo solo aplica para las pantallas lg -->
+            <div class="col-12 col-md-7 col-lg-5 ms-lg-3 mt-4 mb-4">
                 <img src="img/vaca.jpg" alt="Vaca" class="img-fluid rounded">
             </div>
-            <div class="col-12 col-md-7 col-lg-1"></div>
+            <div class="col-12 col-md-1 col-lg-1"></div>
         </div>
 
+        <!-- Línea para dividir la sección -->
         <hr class="border border-primary">
 
-        <header class="my-4">
+        <!-- Encabezado sección de productos -->
+        <header class="my-5">
             <h2 class="text-center text-primary">Nuestros Productos</h2>
         </header>
 
+        <!-- Fila 1 de productos -->
         <div class="row text-center">
             <div class="col-12 col-md-1 col-lg-1"></div>
             <div class="col-12 col-md-5 col-lg-5 mb-4">
@@ -118,6 +134,7 @@
             <div class="col-12 col-md-1 col-lg-1"></div>
         </div>
 
+        <!-- Fila 2 de productos -->
         <div class="row text-center">
             <div class="col-12 col-md-1 col-lg-1"></div>
             <div class="col-12 col-md-5 col-lg-5 mb-4">
@@ -165,11 +182,98 @@
         <div class="text-center">
             <button class="btn btn-primary d-inline-flex align-items-center mt-3 mb-3">Ver Productos</button>
         </div>
+    
+        <!-- Línea para dividir la sección -->
+        <hr class="border border-primary">
 
-        
+        <!-- Sección de contacto - Formulario -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Más Información</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        
+                        <!-- Formulario -->
+                        <form id="contactoForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                                <div class="invalid-feedback">Por favor, ingrese tu nombre.</div>
+                            </div>
 
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+                                <div class="invalid-feedback">Por favor, ingrese un correo válido.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" placeholder="Escribe el asunto" required>
+                                <div class="invalid-feedback">Por favor, indique el asunto del mensaje.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                                <div class="invalid-feedback">Por favor, escriba un mensaje.</div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5">Enviar</button>
+                            </div>
+                        </form>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Encabezado del modal -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Mensaje enviado</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- Cuerpo del modal -->
+                                    <div class="modal-body">
+                                        ¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente.
+                                    </div>
+                                    <!-- Footer del modal con botón de cerrar -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Script de validación del formulario y del modal -->
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const form = document.getElementById('contactoForm');
+
+                                form.addEventListener('submit', function (event) {
+                                event.preventDefault(); // Para no recargar la página
+                                event.stopPropagation();
+
+                                if (form.checkValidity()) {
+                                    // Mostrar modal solo si el formulario es válido
+                                    const modal = new bootstrap.Modal(document.getElementById('miModal'));
+                                    modal.show();
+                                    form.reset(); // Limpia los campos después de enviar
+                                    form.classList.remove('was-validated');
+                                } else {
+                                    // Muestra los mensajes de error
+                                    form.classList.add('was-validated');
+                                }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main> 
 
+    <!-- Footer -->
     <footer class="bg-primary text-white mt-4">
         <div class="container py-4">
             <div class="row">
@@ -181,7 +285,7 @@
                     <a class="text-white text-decoration-none" href="https://www.pentanic.com/">www.pentanic.com</a>
                     
                 </div>
-
+                <!-- Logos para redes sociales con enlace a su página -->
                 <div class="col-md-6 text-md-end">
                     <h5 class="fw-bold">Síguenos</h5>
                     <a href="https://www.facebook.com/pentanic" target="blank" class="text-white ms-5 me-1">
