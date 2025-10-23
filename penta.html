@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,8 +44,9 @@
                 </li>
             </ul>
             <!--Espacio para Buscar-->
-            <form class="d-flex">
-                <input class="form-control me-sm-2 search-input" type="search" placeholder="Buscar">
+            <form class="d-flex" role="search">
+                <label for="buscar" class="visually-hidden">Buscar en el sitio</label>
+                <input id="buscar" class="form-control me-sm-2 search-input" type="search" placeholder="Buscar" aria-label="Buscar en el sitio">
                 <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
             </div>
@@ -57,9 +58,9 @@
         <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicadores del carrusel -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active" aria-label="Foto 1"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2" aria-label="Foto 3"></button>
             </div>
 
             <!-- Contenido (imágenes) del carrusel -->
@@ -91,7 +92,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-md-1 col-lg-1"></div>
             <div class="col-12 col-md-7 col-lg-5 me-lg-5 texto-penta">
-                <h2 class="text-primary mb-3">Bienvenidos a Penta</h2>
+                <h1 class="text-primary mb-3">Bienvenidos a Penta</h1>
                 <p>En Penta, nos dedicamos a ofrecer productos veterinarios de alta calidad para el bienestar animal. Nuestra misión es proporcionar soluciones efectivas y seguras para mantener a tus animales saludables.</p>
                 <p>Explora nuestra amplia gama de productos, desde antibióticos hasta vitaminas y minerales, diseñados para satisfacer las necesidades específicas de cada especie. Nuestro equipo de expertos está comprometido en brindarte el mejor servicio y asesoramiento para que puedas tomar decisiones informadas sobre la salud de tus animales.</p>
                 <button class="btn btn-primary mt-2">Conoce más</button>
@@ -108,7 +109,7 @@
 
         <!-- Encabezado sección de productos -->
         <header class="my-5">
-            <h2 class="text-center text-primary">Nuestros Productos</h2>
+            <h1 class="text-center text-primary">Nuestros Productos</h1>
         </header>
 
         <!-- Fila 1 de productos -->
@@ -118,7 +119,7 @@
                 <div class="card h-100">
                     <img src="img/antibioticos.png" class="card-img-top" alt="Antibióticos">
                     <div class="card-body">
-                        <h5 class="card-title">Antibióticos</h5>
+                        <h1 class="card-title">Antibióticos</h1>
                     </div>
                 </div>
             </div>
@@ -127,7 +128,7 @@
                 <div class="card h-100">
                     <img src="img/desparasitantes.png" class="card-img-top" alt="Desparasitantes">
                     <div class="card-body">
-                        <h5 class="card-title">Desparasitantes</h5>
+                        <h1 class="card-title">Desparasitantes</h1>
                     </div>
                 </div>
             </div>
@@ -141,7 +142,7 @@
                 <div class="card h-100">
                     <img src="img/antimicotico.png" class="card-img-top" alt="Antimicóticos">
                     <div class="card-body">
-                        <h5 class="card-title">Antimicóticos</h5>
+                        <h1 class="card-title">Antimicóticos</h1>
                     </div>
                 </div>
             </div>
@@ -150,20 +151,21 @@
                 <div class="card h-100">
                     <img src="img/antiinflamatorios.png" class="card-img-top" alt="Antiinflamatorios">
                     <div class="card-body">
-                        <h5 class="card-title">Antiinflamatorios</h5>
+                        <h1 class="card-title">Antiinflamatorios</h1>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-1 col-lg-1"></div>
          </div>
 
+        <!-- Fila 3 de productos -->
         <div class="row text-center">
             <div class="col-12 col-md-1 col-lg-1"></div>
             <div class="col-12 col-md-5 col-lg-5 mb-4">
                 <div class="card h-100">
                     <img src="img/higiene.png" class="card-img-top" alt="Higiene">
                     <div class="card-body">
-                        <h5 class="card-title">Higiene</h5>
+                        <h1 class="card-title">Higiene</h1>
                     </div>
                 </div>
             </div>
@@ -172,7 +174,7 @@
                 <div class="card h-100">
                     <img src="img/minerales.png" class="card-img-top" alt="Vitaminas y Minerales">
                     <div class="card-body">
-                        <h5 class="card-title">Vitaminas y Minerales</h5>
+                        <h1 class="card-title">Vitaminas y Minerales</h1>
                     </div>
                 </div>
             </div>
@@ -189,7 +191,7 @@
         <!-- Sección de contacto - Formulario -->
         <section id="contacto" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center text-primary mb-4">Más Información</h2>
+                <h1 class="text-center text-primary mb-4">Más Información</h1>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
                         
@@ -278,7 +280,7 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <h5 class="fw-bold">Contáctenos</h5>
+                    <h1 class="fw-bold">Contáctenos</h1>
                     <p class="text-white mb-1">De Comtech 1c arriba y 1.5 c al lago, Managua, Nicaragua</p>
                     <p class="text-white mb-1">Teléfono: +505 8670-8328</p>
                     <p class="text-white mb-0">Correo electrónico: info@pentanic.com</p>
@@ -287,12 +289,11 @@
                 </div>
                 <!-- Logos para redes sociales con enlace a su página -->
                 <div class="col-md-6 text-md-end">
-                    <h5 class="fw-bold">Síguenos</h5>
-                    <a href="https://www.facebook.com/pentanic" target="blank" class="text-white ms-5 me-1">
-                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-                    <a href="https://www.tiktok.com/@penta.nicaragua" target="_blank" class="text-white ms-2 me-2">
-                        <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-                    </a>
+                    <h1 class="fw-bold">Síguenos</h1>
+                    <a href="https://www.facebook.com/pentanic" target="_blank" class="text-white ms-5 me-1" aria-label="Facebook de Penta">
+                        <i class="bi bi-facebook" style="font-size: 1.5rem;" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/@penta.nicaragua" target="_blank" class="text-white ms-2 me-2" aria-label="Tiktok de Penta">
+                        <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i></a>
                 </div>
             </div>
 

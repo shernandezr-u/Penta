@@ -70,7 +70,15 @@ penta/
 │   ├── antimicotico.png
 │   ├── antiinflamatorios.png
 │   ├── higiene.png
-│   └── minerales.png
+│   ├── minerales.png
+│   └── capturas/
+│        ├── captura_bienvenida.png
+│        ├── captura_carrusel.png  
+│        ├── captura_formulario.png
+│        ├── captura_modal.png
+│        ├── captura_navbar.png
+│        ├── captura_productos.png
+│        └── captura_validacion.png
 └── README.md
 ```
 
@@ -98,5 +106,8 @@ penta/
 
 ### Modal de confirmación de mensaje
 ![Modal](img/capturas/captura_modal.png)
+
+### Footer
+![Footer](img/capturas/captura_footer.png)
 
 ---
